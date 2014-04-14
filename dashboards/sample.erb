@@ -1,0 +1,72 @@
+<script type='text/javascript'>
+$(function() {
+  // These settings override the defaults set in application.coffee. You can do this on a per dashboard basis.
+  Dashing.gridsterLayout('[{"col":1,"row":1},{"col":2,"row":1},{"col":3,"row":1},{"col":4,"row":1},{"col":5,"row":1},{"col":1,"row":2},{"col":2,"row":2},{"col":3,"row":2},{"col":4,"row":2}, {"col":5, "row":2}, {"col":1, "row":3}, {"col":2,"row":3},{"col":3,"row":3},{"col":4,"row":3}, {"col":5, "row":3}]')
+  Dashing.widget_base_dimensions = [370, 340]
+  Dashing.numColumns = 5
+});
+</script>
+
+<% content_for :title do %>1080p dashboard<% end %>
+
+<div class="gridster">
+  <ul>
+
+	<li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+        	<div data-view="Image" data-image="/wiki.png" style="background-color:#ffffff;"</div>
+        </li>
+
+  <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="aww" data-view="RandomAww" ></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-view="Clock"></div>
+      <i class="icon-time icon-background"></i>
+    </li>
+
+ <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+       <div data-id="klimato" data-view="Klimato"></div>
+    </li>
+
+<li data-row="1" data-col="3" data-sizex="1" data-sizey="1">
+    <div data-id="icinga" data-view="Simplemon" data-title="Icinga services"></div>
+    </li>
+
+ <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+  <div data-id="news" data-view="News" style="background-color:#ff4e56;"></div>
+</li>
+
+   <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+  <div data-id="calendar_events" data-pre="0" data-view="Calendar" style="background-color:#0077cc"></div>
+</li>
+
+<li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+  <div data-id="calendar_events" data-pre="1"  data-view="Calendar" style="background-color:#ff7700"></div>
+</li>
+
+<li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="zendesk" data-view="Zendesk" data-title="Zendesk"</div>
+    </li>
+
+<li data-row="1" data-col="1" data-sizex="1" data-sizey="2">
+      <div data-id="server_status" data-view="ServerStatus" data-title="Server Status"</div>
+    </li>
+
+ <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="welcome" data-view="Text" data-title="Hello, OIT!" data-text="This is your new dashboard." data-moreinfo="Protip: You can drag the widgets around!"></div>
+    </li>
+
+ <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+  <div data-id="calendar_events" data-pre="2" data-view="Calendar" style="background-color:#ff7700"></div>
+</li>
+
+<li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+  <div data-id="calendar_events" data-pre="3"  data-view="Calendar" style="background-color:#0077cc"></div>
+</li>
+
+<li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="asana_tasks" data-view="AsanaTasks" data-title="Asana Tasks"</div>
+    </li>
+
+    </ul>
