@@ -1,7 +1,7 @@
 require 'net/http'
 require 'json'
  
-array = ['/assets/1.gif', '/assets/2.gif'] #list of all images to loop through
+array = ['/assets/1.gif', '/assets/2.gif'] #list of all images to loop through to be displayed
 i = 0
 
 
