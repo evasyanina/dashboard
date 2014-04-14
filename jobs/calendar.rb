@@ -8,8 +8,7 @@ require 'cgi'
 # make sure your URLs end with /full, not /simple (which is default)!
 # ------
 
-
-calendars = [{name: 'Calendar1', url: 'http://your_info'}, {name: 'Calendar2, url: 'http://your_info'}]
+calendars = [{name: 'Calendar1', url: 'http://your_private_url/full'}, {name: 'Calendar2', url: 'http://your_private_url/full'}]
 
 events = Array.new
  
