@@ -5,9 +5,9 @@ require 'json'
 # You need to enter your API key to query Asana.
 # You can find that by clicking on your name in the bottom left and selecting Account Settings.
 # Click on the Apps tab.
-api_key = ''
+api_key = 'YOUR_KEY'
 # The name of the workspace you would like to query. Case sensitive so you might need to go to Edit Workspace Settings to see.
-workspace_name = ''
+workspace_name = 'YOUR_WORKSPACE'
 # Number of tasks to show
 num_tasks = 10
  
