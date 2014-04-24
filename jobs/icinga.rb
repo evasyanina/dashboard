@@ -6,9 +6,9 @@ uri = URI.parse("https://YOUR_HOST/icinga/cgi-bin/status.cgi?host=all&nostatushe
 SCHEDULER.every '4s' do
   http = Net::HTTP.new(uri.host, uri.port)
   http.use_ssl = true
-  http.openssl_verify_mode = 'none'
+  http.verify_mode = OpenSSL::SSL:VERIFY_NONE
   request = Net::HTTP::Get.new(uri.request_uri)
-  request.basic_auth("YOUR_LOGIN", "YOUR_PASSWORD")
+  request.basic_auth 'YOUR_LOGIN', 'YOUR_PASSWORD'
   response = http.request(request)
   services = JSON.parse(response.body)["status"]["service_status"]
   total_critical = 0
